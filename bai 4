@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+double lt(double a,int b) {
+ 	if (b==0)
+ 		return 1.0;
+ 	else return a*lt(a,b-1);
+
+ }
+int main () {
+	double a; int b;
+	cin >> a >> b;
+	if ( b>=0)
+		printf ("%.1lf",lt(a,b));
+	else cout << "khong hop le" << endl;
+	return 0;
+}
+	
+
+	
