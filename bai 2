@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+
+ll F ( int n ) {
+	if ( n==0)
+		return 0;
+	else if ( n==1)
+		return 1;
+	else 
+	return F(n-1)+F(n-2);
+}
+int main () {
+	int n;
+	cin >>n;
+	if ( n>=0 && n<=30)
+		cout << F(n) << endl;
+	else cout << "khong hop le" << endl;
+return 0;
+}
+	
+	
+
+	
