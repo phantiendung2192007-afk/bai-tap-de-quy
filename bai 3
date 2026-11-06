@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+
+ll S(int n) {
+	if ( n >=1 && n<= 1e4)
+		return n+S(n-1);
+	if (n==1)
+		return 1;
+}
+int main () {
+	int n ;
+	cin >> n;
+	if ( n>=1 && n<=1e4)
+	 cout << S(n);
+	else cout <<"khong hop le";
+	return 0;
+}
+
+	
+
+	
